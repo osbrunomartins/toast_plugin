@@ -203,6 +203,7 @@ public class Toast extends CordovaPlugin {
             public void onFinish() {
               returnTapEvent("hide", msg, data, callbackContext);
               toast.cancel();
+              hide();
             }
           }.start();
 
